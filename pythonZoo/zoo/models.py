@@ -21,6 +21,12 @@ class Neighbors(models.Model):
     fromExhibit = models.ForeignKey("Exhibit", on_delete=models.SET_NULL, null=True, related_name='fromExhibit')
     direction = models.CharField(max_length=2, help_text="Enter Direction To Travel")
     toExhibit = models.ForeignKey("Exhibit", on_delete=models.SET_NULL, null=True, related_name='toExhibit')
-
+    
     def __str__(self):
         return self.direction
+class Animals(models.Model):
+    parentExhibit = models.ForeignKey("Exhibit", on_delete=models.SET_NULL, null=True, related_name='parentExhibit')
+    name = models.CharField(max_length=200, help_text="Enter Animal Name")
+
+    def __str__(self):
+        return self.name
