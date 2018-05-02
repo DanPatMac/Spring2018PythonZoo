@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Zoo Detail {{ animals.id }} {{ animals.name }}</h1>
+
+{% load static %}
+<img src="{% static animals.imageFilePath %}" alt="Something Broke!">
+
+{% endblock %}
