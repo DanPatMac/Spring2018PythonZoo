@@ -5,6 +5,13 @@
 <h1>Zoo Detail {{ animals.id }} {{ animals.name }}</h1>
 
 {% load static %}
+
 <img src="{% static animals.imageFilePath %}" alt="Something Broke!">
+
+<h3>Habitat</h3>
+<p>{{ animals.habitatDesc }}</p>
+
+<h3>Diet</h3>
+<p>{{ animals.dietDesc }}</p>
 
 {% endblock %}

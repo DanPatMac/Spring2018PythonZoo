@@ -15,7 +15,7 @@ class Zoo(models.Model):
 
 class Exhibit(models.Model):
     name = models.CharField(max_length=200, help_text="Enter Exhibit Name")
-    zoo = models.ForeignKey("Zoo", on_delete=models.SET_NULL, null=True)
+    zoo = models.ForeignKey("Zoo", on_delete=models.SET_NULL, null=True, related_name='parentZoo')
     hasExit = models.BooleanField(default=False)
 
     def __str__(self):

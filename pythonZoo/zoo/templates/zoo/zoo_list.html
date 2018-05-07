@@ -5,7 +5,7 @@
 <h1>Zoo List</h1>
 
 {% for zoo in zoo_list %}
-    <p>{{ zoo.name }}</p>
+    <p><a href="{{ zoo.id }}">{{ zoo.name }}</a></p>
 {% endfor %}
 
 {% endblock %}

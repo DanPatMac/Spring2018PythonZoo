@@ -3,3 +3,67 @@
     padding: 0;
     list-style: none;
 }
+
+img {
+    width:250px;
+}
+
+body {
+    padding:0px;
+    margin:0px;
+    background-color:#fdfdfa;
+}
+.header {
+    height:50px;
+    font-family: Arial;
+    display: table-cell;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+    color:white;
+    width:20000px;
+    vertical-align: middle;
+    background-color:#551A8B;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aa8cc5;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family:arial;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #9975b9;
+}
+.articleTitle {
+    font-family:Arial;
+    font-size:17pt;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:0px;
+}
+.articles {
+    font-family:georgia;
+    font-size:10.5pt;
+    padding:10px;
+    padding-top:0px;
+}
+p {
+    text-indent: 40px;
+}
