@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Contact Us</h1>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+<textarea rows="4" cols="50">
+    Topic here 
+</textarea>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
